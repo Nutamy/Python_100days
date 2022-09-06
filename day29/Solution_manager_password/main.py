@@ -3,6 +3,9 @@ from tkinter import messagebox
 from random import choice, randint, shuffle
 import pyperclip
 import json
+from cipher import *
+
+SHIFT = 8
 
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 
@@ -26,9 +29,9 @@ def generate_password():
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 def save():
 
-    website = website_entry.get()
-    email = email_entry.get()
-    password = password_entry.get()
+    website = encode(website_entry.get(), SHIFT)
+    email = encode(email_entry.get(), SHIFT)
+    password = encode(password_entry.get(), SHIFT)
     new_data = {
         website: {
             "email": email,
@@ -60,7 +63,7 @@ def save():
 
 # ---------------------------- FIND PASSWORD ------------------------------- #
 def find_password():
-    website = website_entry.get()
+    website = encode(website_entry.get(), SHIFT)
     try:
         with open("data.json") as data_file:
             data = json.load(data_file)
@@ -68,10 +71,12 @@ def find_password():
         messagebox.showinfo(title="Error", message="No Data File Found.")
     else:
         if website in data:
-            email = data[website]["email"]
-            password = data[website]["password"]
+            email = decode(data[website]["email"], SHIFT)
+            password = decode(data[website]["password"], SHIFT)
+            website = decode(website, SHIFT)
             messagebox.showinfo(title=website, message=f"Email: {email}\nPassword: {password}")
         else:
+            website = decode(website, SHIFT)
             messagebox.showinfo(title="Error", message=f"No details for {website} exists.")
 
 
