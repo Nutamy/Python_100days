@@ -11,3 +11,5 @@ Yahoo | redruby705@yahoo.com | w$4uQ8fC4$
 Mail2 | yellow.python@mail.ru | !H2VK9irJ
 Mail | yellow.python@mail.ru | Gh*&*L4OBEr
 MailSMPT | yellow.python@mail.ru | NPz3vhMnGcd0jqFPrVuA
+pythonanywhere | strawBug | Vlw&)3o1&n9
+Yandex | yellow.python@yandex.ru | pl&oQ6&K#NG
