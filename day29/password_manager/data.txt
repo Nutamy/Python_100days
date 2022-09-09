@@ -15,3 +15,7 @@ pythonanywhere | strawBug | Vlw&)3o1&n9
 Yandex | yellow.python@yandex.ru | pl&oQ6&K#NG
 Twilio | yellow.python@mail.ru | NdkT&ggPnF1SY)gP*O5PV
 https://www.alphavantage.co/ | yellow.python@mail.ru | QZ3HPQDTWMIF9GYZ
+https://www.alphavantage.co/ | yellow.python@mail.ru | QZ3HPQDTWMIF9GYZ
+newsapi.org | yellow.python@mail.ru | lHGupa0NR6Yp#zYLhUe
+newsapi.org | yellow.python@mail.ru | lHGupa0NR6Yp#zYLhUe    API KEY:c5b1aed00f8f4d668c0044e4c4707841
+newsapi.org | yellow.python@mail.ru | lHGupa0NR6Yp#zYLhUe    API KEY:c5b1aed00f8f4d668c0044e4c4707841
