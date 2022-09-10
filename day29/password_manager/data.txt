@@ -19,3 +19,4 @@ https://www.alphavantage.co/ | yellow.python@mail.ru | QZ3HPQDTWMIF9GYZ
 newsapi.org | yellow.python@mail.ru | lHGupa0NR6Yp#zYLhUe
 newsapi.org | yellow.python@mail.ru | lHGupa0NR6Yp#zYLhUe    API KEY:c5b1aed00f8f4d668c0044e4c4707841
 newsapi.org | yellow.python@mail.ru | lHGupa0NR6Yp#zYLhUe    API KEY:c5b1aed00f8f4d668c0044e4c4707841
+https://www.nutritionix.com/ | yellow.python@mail.ru | j0UxjTM6rGaMDNzMRWz)
