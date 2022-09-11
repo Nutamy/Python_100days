@@ -31,7 +31,7 @@ headers = {
 # print(response.text)
 
 pixel_creation_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}"
-now = dt.datetime(year=2022, month=7, day=7)
+now = dt.datetime.now()
 today = now.strftime("%Y%m%d")
 
 pixel_data = {
@@ -42,7 +42,7 @@ pixel_data = {
 response = requests.post(url=pixel_creation_endpoint, json=pixel_data, headers=headers)
 print(response.text)
 
-update_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}/{today.strftime('%Y%m%d')}"
+update_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}/{today}"
 
 new_pixel_data = {
     "quantity": "4"
@@ -53,7 +53,7 @@ new_pixel_data = {
 # print(response.text)
 
 
-delete_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}/{today.strftime('%Y%m%d')}"
+delete_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}/{today}"
 
 
 ## DELETE
