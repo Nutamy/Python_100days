@@ -1,12 +1,9 @@
-from turtledemo.minimal_hanoi import play
-
 import requests
 from bs4 import BeautifulSoup
 import os
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials, SpotifyOAuth
 import smtplib
-
 
 # CONSTANTS
 ID = os.environ["CLIENT_ID"]
@@ -15,17 +12,14 @@ MY_EMAIL = os.environ["EMAIL"]
 RECIPIENT = os.environ["RECIPIENT"]
 MY_PASSWORD = os.environ["PASSWORD"]
 
-
 # LOGIN SPOTIFY
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=ID,
                                                            client_secret=SECRET))
 
-
 # GET DATE FOR SEARCHING TOP 5 SONGS
-date = input("Which year do you want to travel? "
-             "Type thr date in this format YYYY-MM-DD: ")
+date = input("Type the date which you wish to travel in.\n"
+             "the format YYYY-MM-DD: ")
 url = f"https://www.billboard.com/charts/hot-100/{date}/"
-
 
 # REQUEST TO CHARTS
 response = requests.post(url)
@@ -34,7 +28,6 @@ soup = BeautifulSoup(response.text, "html.parser")
 # CREATING LIST OF TOP 5 SONGS
 top = soup.find_all(name="h3", id="title-of-a-story", class_="a-truncate-ellipsis")
 top_5 = [tag.getText().strip() for tag in top][:5]
-
 
 #  GET LINKS FROM SPOTIFY
 playlist = []
