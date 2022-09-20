@@ -1,0 +1,222 @@
+body {
+	font-family: Verdana, Roboto, Open Sans;
+	font-size: 14px;
+	background-color: #222;
+	color: #fff;
+}
+
+main {
+	padding-left: 0;
+}
+
+i {
+	vertical-align: middle;
+}
+
+.cv-wrapper {
+	width: 90%;
+	margin: auto;
+}
+
+.cv-spclink {
+	font-weight: bold !important;
+}
+
+ul > li, ol > li,  {
+	text-align: justify;
+}
+
+.cv-co {
+	text-align: justify;
+}
+
+.cv-topborder {
+	height: 15px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+
+.cv-photowrapper {
+	width: 125px;
+	padding: 5px;
+	border-radius: 2px;
+	margin: auto;
+}
+
+.cv-personalinfo {
+	font-weight: bold;
+}
+
+.cv-title {
+	font-family: Orbitron, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.cv-subtitle {
+	font-family: Orbitron, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.cv-sub {
+	font-weight: bold;
+}
+
+.cv-listtitle {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.cv-list {
+	margin-top: 0;
+}
+
+.cv-spctext {
+	font-style: italic;
+}
+
+.new.badge {
+	font-size: 8px;
+}
+
+.text-right {
+	text-align: left;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.cv-pinfogroup {
+	text-align: center;
+}
+
+.cv-hide {
+	animation: toggleHide 0.2s ease-in-out forwards;
+}
+
+.cv-show {
+	animation: toggleShow 0.3s ease-in-out forwards;
+}
+
+@keyframes toggleShow {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes toggleHide {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+
+@media (min-width: 993px) {
+	.text-right {
+		text-align: right;
+	}
+
+	main {
+		padding-left: 300px;
+	}
+
+	.cv-pinfogroup {
+		text-align: left;
+	}
+
+	.cv-photowrapper {
+		margin: 0;
+		float: right;
+	}
+}
+
+.cv-printable {
+	display: none;
+}
+
+@media print {
+	@page {
+		margin: 0.5in;
+	}
+
+	.col.s12 {
+		page-break-inside: auto;
+	}
+
+	.card-content {
+		page-break-after: avoid;
+	}
+
+	header {
+		display: none;
+	}
+
+	.divider {
+		margin-bottom: 10px;
+	}
+
+	.text-right {
+		text-align: right;
+	}
+
+	.cv-pinfogroup {
+		text-align: left;
+	}
+
+	.cv-photowrapper {
+		width: 1.25in;
+		margin: 0;
+		float: right;
+	}
+
+	.cv-nonprintable {
+		display: none;
+	}
+
+	.cv-printable {
+		display: inline;
+	}
+
+	.cv-title {
+		font-size: 16px;
+	}
+
+	.cv-listtitle {
+		page-break-after: avoid;
+	}
+
+	.cv-list {
+		page-break-before: avoid;
+	}
+
+	.cv-subtitle {
+		font-size: 12px;
+		text-align: left;
+	}
+
+	.new.badge {
+		font-size: 10px !important;
+	}
+
+	.cv-sub {
+		font-size: 10px;
+		text-align: left;
+		clear: both;
+	}
+
+	body {
+		font-size: 12px;
+	}
+
+	.icon-smaller {
+		transform-origin: top left;
+		transform: scale(1.5);
+	}
+}
