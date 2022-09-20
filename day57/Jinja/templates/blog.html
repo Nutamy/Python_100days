@@ -6,7 +6,7 @@
 </head>
 <body>
     {% for blog_post in posts: %}
-        <h1>{{ blog_post["title"] }}</h1>
+        <h1><a href="{{ url_for('get_post', idx=blog_post['id'])}}">{{ blog_post["title"] }}</a></h1>
         <h2>{{ blog_post["subtitle"] }}</h2>
     {% endfor %}
 </body>
